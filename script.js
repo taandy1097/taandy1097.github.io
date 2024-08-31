@@ -4,7 +4,6 @@ const titleElement = document.querySelector(".title");
 const buttonsContainer = document.querySelector(".buttons");
 const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
-const catImg = document.querySelector(".cat-img");
 
 const MAX_IMAGES = 5;
 
@@ -27,7 +26,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Anh yêu em nhiều lắm ,Anh hứa không bao giờ làm em buồn nữa đâu :3";
+  titleElement.innerHTML = "Anh yêu em nhiều lắm, Anh hứa không bao giờ làm em buồn nữa đâu :3";
   buttonsContainer.classList.add("hidden");
   changeImage(6); // Hiển thị hình ảnh "yes"
 }
@@ -56,12 +55,12 @@ function generateMessage(noCount) {
 
 function changeImage(imageIndex) {
   const imageSources = [
-    "img/cat-1.jpg",
-    "img/cat-2.jpg",
-    "img/cat-3.jpg",
-    "img/cat-4.jpg",
-    "img/cat-5.jpg",
-    "img/cat-yes.jpg"
+    "cat-1.jpg",
+    "cat-2.jpg",
+    "cat-3.jpg",
+    "cat-4.jpg",
+    "cat-5.jpg",
+    "cat-yes.jpg"
   ];
 
   if (imageIndex < 1 || imageIndex > imageSources.length) {
@@ -69,7 +68,8 @@ function changeImage(imageIndex) {
     return;
   }
 
-  catImg.src = imageSources[imageIndex - 1];
+  // Truy cập trực tiếp vào phần tử hình ảnh
+  document.querySelector(".cat-img").src = imageSources[imageIndex - 1];
 }
 
 function updateNoButtonText() {
