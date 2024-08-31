@@ -55,6 +55,7 @@ function generateMessage(noCount) {
 
 function changeImage(imageIndex) {
   const imageSources = [
+    "cat-0.jpg",  // Thêm cat-0.jpg vào đây
     "cat-1.jpg",
     "cat-2.jpg",
     "cat-3.jpg",
@@ -63,13 +64,12 @@ function changeImage(imageIndex) {
     "cat-yes.jpg"
   ];
 
-  if (imageIndex < 1 || imageIndex > imageSources.length) {
+  if (imageIndex < 0 || imageIndex >= imageSources.length) {
     console.error("Invalid image index");
     return;
   }
 
-  // Truy cập trực tiếp vào phần tử hình ảnh
-  document.querySelector(".cat-img").src = imageSources[imageIndex - 1];
+  document.querySelector(".cat-img").src = imageSources[imageIndex];
 }
 
 function updateNoButtonText() {
