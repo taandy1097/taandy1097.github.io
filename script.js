@@ -45,7 +45,7 @@ function generateMessage(noCount) {
     "Không Bao Giờ",
     "Anh biết lỗi rồi ạ",
     "Mong em tha lỗi cho anh :((",
-    "Anh sai rồi , anh thật đáng trách ạ",
+    "Anh sai rồi, anh thật đáng trách ạ",
     "Em đừng giận anh nữa nhé",
     "Anh yêu em nhiều lắm ",
   ];
