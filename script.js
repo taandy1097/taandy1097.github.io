@@ -60,6 +60,7 @@ function changeImage(image) {
   catImg.src = `img/cat-2.jpg`;
   catImg.src = `img/cat-3.jpg`;
   catImg.src = `img/cat-4.jpg`;
+  catImg.src = `img/cat-5.jpg`
   catImg.src = `img/cat-yes.jpg`;
 }
 
