@@ -29,7 +29,7 @@ noButton.addEventListener("click", function () {
 function handleYesClick() {
   titleElement.innerHTML = "Anh yêu em nhiều lắm ,Anh hứa không bao giờ làm em buồn nữa đâu :3";
   buttonsContainer.classList.add("hidden");
-  changeImage("yes");
+  changeImage(6); // Hiển thị hình ảnh "yes"
 }
 
 function resizeYesButton() {
@@ -54,14 +54,22 @@ function generateMessage(noCount) {
   return messages[messageIndex];
 }
 
-function changeImage(image) {
-  catImg.src = `img/cat-O.jpg`;
-  catImg.src = `img/cat-1.jpg`;
-  catImg.src = `img/cat-2.jpg`;
-  catImg.src = `img/cat-3.jpg`;
-  catImg.src = `img/cat-4.jpg`;
-  catImg.src = `img/cat-5.jpg`
-  catImg.src = `img/cat-yes.jpg`;
+function changeImage(imageIndex) {
+  const imageSources = [
+    "img/cat-1.jpg",
+    "img/cat-2.jpg",
+    "img/cat-3.jpg",
+    "img/cat-4.jpg",
+    "img/cat-5.jpg",
+    "img/cat-yes.jpg"
+  ];
+
+  if (imageIndex < 1 || imageIndex > imageSources.length) {
+    console.error("Invalid image index");
+    return;
+  }
+
+  catImg.src = imageSources[imageIndex - 1];
 }
 
 function updateNoButtonText() {
