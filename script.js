@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Anh iu bé ,Anh hứa hongg làm bé buồn nữa đouuu :3";
+  titleElement.innerHTML = "Anh yêu em nhiều lắm ,Anh hứa không bao giờ làm em buồn nữa đâu :3";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -43,11 +43,11 @@ function resizeYesButton() {
 function generateMessage(noCount) {
   const messages = [
     "Không Bao Giờ",
-    "Anh bicc lỗi rồi ạa",
-    "Mong bé tha lỗi choo anhh :((",
-    "Anhh saii rồi , anhh đáng trách ạ",
-    "Bé đừng giận anhh nữa nhoo",
-    "Anhhh iu bé nhắm nhunnn đóoooo",
+    "Anh biết lỗi rồi ạ",
+    "Mong em tha lỗi cho anh :((",
+    "Anh sai rồi , anh thật đáng trách ạ",
+    "Em đừng giận anh nữa nhé",
+    "Anh yêu em nhiều lắm ",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
