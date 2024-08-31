@@ -55,7 +55,12 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.jpg`;
+  catImg.src = `img/cat-O.jpg`;
+  catImg.src = `img/cat-1.jpg`;
+  catImg.src = `img/cat-2.jpg`;
+  catImg.src = `img/cat-3.jpg`;
+  catImg.src = `img/cat-4.jpg`;
+  catImg.src = `img/cat-yes.jpg`;
 }
 
 function updateNoButtonText() {
